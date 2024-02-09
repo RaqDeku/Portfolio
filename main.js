@@ -5,11 +5,11 @@ const ogLinks = [
   "https://github.com/RaqDeku/Go-Authentication-API",
   "https://github.com/RaqDeku/Create-Store-API",
 ];
-const github = "https://cors-anywhere.herokuapp.com/";
+// const github = "https://cors-anywhere.herokuapp.com/";
 
 function displayLink() {
   ogLinks.forEach((link) => {
-    fetch(github + link)
+    fetch(link)
       .then((response) => response.text())
       .then((html) => {
         const doc = new DOMParser().parseFromString(html, "text/html");
