@@ -17,6 +17,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container">
@@ -32,7 +36,7 @@
                   <ul class="nav-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
                 <a
@@ -67,10 +71,8 @@
               <div class="about-content">
                 <div class="about-txt">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Debitis beatae odio eligendi consequatur minus quisquam
-                    expedita? Officia, vitae. Ipsam inventore magni, hic sit
-                    fugiat delectus nemo velit neque corrupti illum!
+                    I am BSc. Computer Science student who passionate about
+                    aviation and technology.
                   </p>
                 </div>
                 <div class="about-img">
@@ -78,18 +80,92 @@
                 </div>
               </div>
             </div>
-            <div id="project">
-              <div class="projects">
-                <div class="projects-content">
-                  <h1>Projects</h1>
-                  <a href="https://github.com/RaqDeku/SSE">Github</a>
-                </div>
+            <div id="skills" class="skills">
+              <h1 style="padding-bottom: 10px">Skills</h1>
+              <div class="skill-content">
+                <ul class="skill-list">
+                  <li>TypeScript & JavaScript with Nodejs</li>
+                  <li>Kafka</li>
+                  <li>Go</li>
+                </ul>
               </div>
             </div>
-            <div>Contact</div>
+            <div id="project" class="projects">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                "
+              >
+                <h1>Projects</h1>
+                <a
+                  href="https://github.com/RaqDeku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="button btn">
+                    Github
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="ml-2"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+              <div id="ogDiv" class="projects-content"></div>
+            </div>
           </section>
-          <footer class="main" style="border-bottom: none">
-            <div>Footer</div>
+          <footer id="contact" class="footer" style="border-bottom: none">
+            <div class="footer-contact">
+              <div style="display: flex; align-items: center">
+                <i class="bx bxs-envelope icon email-icon"></i>
+                raqdeku@outlook.com
+              </div>
+              <div style="display: flex">
+                <ul
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+                    margin-left: 1.5rem;
+                    list-style: none;
+                  "
+                >
+                  <a href="https://instagram.com/raquibsaabit"
+                    ><i class="bx bxl-instagram-alt icon"></i
+                  ></a>
+                  <a href="https://github.com/RaqDeku"
+                    ><i class="bx bxl-github icon"></i
+                  ></a>
+                  <a href="https://twitter.com/RaquibSaabit"
+                    ><i class="bx bxl-twitter icon"></i
+                  ></a>
+                  <a href="https://linkedin.com/in/raquib-saabit"
+                    ><i class="bx bxl-linkedin-square icon"></i
+                  ></a>
+                  <a href="https://youtube.com/@RaquibCodes"
+                    ><i class="bx bxl-youtube icon"></i
+                  ></a>
+                </ul>
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; font-size: 15px">
+              &copy; Raquib Saabit - All rights preserved,
+              <span id="year">year</span>
+            </div>
           </footer>
         </div>
       </div>

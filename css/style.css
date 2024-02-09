@@ -9,6 +9,8 @@ body {
   flex-direction: column;
   border-bottom: 1px dashed;
   border-color: gainsboro;
+  position: fixed;
+  backdrop-filter: blur(15px);
 
   .nav {
     width: 100%;
@@ -49,29 +51,30 @@ body {
           }
         }
       }
-      .button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        color: white;
-        font-size: 16px;
-        height: 3.5rem;
-      }
     }
   }
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  height: 3.5rem;
 }
 
 .main {
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
-  padding: 0 10rem;
+  padding: 2rem 10rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px dashed;
-  border-color: gainsboro;
+  /* border-bottom: 1px dashed;
+  border-color: gainsboro; */
 
   .about {
     width: 100%;
@@ -81,6 +84,7 @@ body {
     padding: 5rem 0;
     border-left: 1px dashed;
     border-right: 1px dashed;
+    border-bottom: 1px dashed;
     border-color: gainsboro;
 
     .about-content {
@@ -101,9 +105,108 @@ body {
       }
 
       img {
-        width: 100%;
+        width: 80%;
         border-radius: 20px;
       }
     }
   }
+
+  .projects {
+    width: 100%;
+    display: flex;
+    padding: 10rem 5rem;
+    flex-direction: column;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+    border-color: gainsboro;
+
+    .projects-content {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      gap: 4rem;
+      width: calc(100% - 16px);
+      margin: 8px;
+      flex: 0 0 calc(100% - 16px);
+    }
+
+    .project-link {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      min-width: 350px;
+      border-radius: 20px;
+      scroll-snap-align: start;
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+
+    .project-link::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .skills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5rem 5rem;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+    border-bottom: 1px dashed;
+    border-color: gainsboro;
+
+    .skills-content {
+      display: flex;
+      width: 100%;
+
+      .skills-list {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+
+  .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .bx {
+    font-size: x-large;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2rem;
+  }
+  /* border-top: 1px dashed;
+  border-color: #fff; */
 }
