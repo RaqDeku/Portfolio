@@ -1,0 +1,109 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: inherit;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed;
+  border-color: gainsboro;
+
+  .nav {
+    width: 100%;
+    padding: 0 10rem;
+
+    .nav-content {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 1.5rem 2rem;
+      align-items: center;
+      justify-content: space-between;
+      border-left: 1px dashed;
+      border-right: 1px dashed;
+      border-color: gainsboro;
+
+      a {
+        text-decoration: none;
+
+        p {
+          font-size: 24px;
+          font-weight: bold;
+          color: black;
+        }
+      }
+      .nav-list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        li {
+          margin-right: 5rem;
+          font-size: 16px;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        height: 3.5rem;
+      }
+    }
+  }
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px dashed;
+  border-color: gainsboro;
+
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+    border-color: gainsboro;
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .about-txt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+      }
+
+      .about-img {
+        width: fit-content;
+        margin-right: 10px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+}
